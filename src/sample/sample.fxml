@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+  <children>
+    <Label layoutX="14.0" layoutY="14.0" prefHeight="24.0" prefWidth="197.0" text="Стоимость трубы 60х40/п.м." />
+    <Label layoutX="14.0" layoutY="38.0" prefHeight="24.0" prefWidth="197.0" text="Стоимость трубы 50х30/п.м." />
+    <Label layoutX="14.0" layoutY="62.0" prefHeight="24.0" prefWidth="197.0" text="Стоимость трубы 40х40/п.м." />
+    <Label layoutX="14.0" layoutY="86.0" prefHeight="24.0" prefWidth="197.0" text="Стоимость трубы 40х20/п.м." />
+    <Label layoutX="14.0" layoutY="182.0" prefHeight="24.0" prefWidth="197.0" text="Стоимость уголка 50х25/п.м." />
+    <Label layoutX="14.0" layoutY="206.0" prefHeight="24.0" prefWidth="197.0" text="Стоимость уголка 50х20/п.м." />
+    <Label layoutX="14.0" layoutY="110.0" prefHeight="24.0" prefWidth="197.0" text="Стоимость трубы 25х25/п.м." />
+    <Label layoutX="14.0" layoutY="134.0" prefHeight="24.0" prefWidth="197.0" text="Стоимость трубы 20х20/п.м." />
+    <Label layoutX="14.0" layoutY="254.0" prefHeight="24.0" prefWidth="197.0" text="Стоимость листа (1.25х2.5м)" />
+    <Label layoutX="14.0" layoutY="278.0" prefHeight="48.0" prefWidth="197.0" text="Стоимость листа (1.25х2.5м) &#10;толщина 1.5" />
+    <Label layoutX="14.0" layoutY="326.0" prefHeight="24.0" prefWidth="197.0" text="Стоимость листа (1х2м)" />
+    <Label layoutX="14.0" layoutY="350.0" prefHeight="48.0" prefWidth="197.0" text="Стоимость листа (1х2м) &#10;толщина 1.5" />
+    <Label layoutX="14.0" layoutY="398.0" prefHeight="24.0" prefWidth="197.0" text="Стоимость листа/м2" />
+    <Label layoutX="14.0" layoutY="446.0" prefHeight="24.0" prefWidth="197.0" text="Стоимость старта/п.м." />
+    <Label layoutX="14.0" layoutY="470.0" prefHeight="24.0" prefWidth="197.0" text="Стоимость петли/шт" />
+    <Label layoutX="14.0" layoutY="494.0" prefHeight="24.0" prefWidth="197.0" text="Стоимость уплотнителя/п.м." />
+    <Label layoutX="14.0" layoutY="518.0" prefHeight="24.0" prefWidth="197.0" text="Стоимость утеплителя/п.м." />
+    <TextField layoutX="211.0" layoutY="15.0" prefWidth="60.0" />
+    <TextField layoutX="211.0" layoutY="39.0" prefWidth="60.0" />
+    <TextField layoutX="211.0" layoutY="63.0" prefWidth="60.0" />
+    <TextField layoutX="211.0" layoutY="87.0" prefWidth="60.0" />
+    <TextField layoutX="211.0" layoutY="111.0" prefWidth="60.0" />
+    <TextField layoutX="211.0" layoutY="135.0" prefWidth="60.0" />
+    <TextField layoutX="211.0" layoutY="183.0" prefWidth="60.0" />
+    <TextField layoutX="211.0" layoutY="207.0" prefWidth="60.0" />
+    <TextField layoutX="211.0" layoutY="256.0" prefWidth="60.0" />
+    <TextField layoutX="211.0" layoutY="291.0" prefWidth="60.0" />
+    <TextField layoutX="211.0" layoutY="327.0" prefWidth="60.0" />
+    <TextField layoutX="211.0" layoutY="363.0" prefWidth="60.0" />
+    <TextField layoutX="211.0" layoutY="447.0" prefWidth="60.0" />
+    <TextField layoutX="211.0" layoutY="471.0" prefWidth="60.0" />
+    <TextField layoutX="211.0" layoutY="495.0" prefWidth="60.0" />
+    <TextField layoutX="211.0" layoutY="519.0" prefWidth="60.0" />
+    <Label layoutX="629.0" layoutY="14.0" prefHeight="24.0" prefWidth="197.0" text="Глазок тип 1" />
+    <TextField layoutX="826.0" layoutY="15.0" prefWidth="60.0" />
+    <Label layoutX="323.0" layoutY="14.0" prefHeight="24.0" prefWidth="197.0" text="Пленка антивандальная/п.м." />
+    <TextField layoutX="520.0" layoutY="15.0" prefWidth="60.0" />
+    <Label layoutX="323.0" layoutY="38.0" prefHeight="24.0" prefWidth="197.0" text="Пленка самоклеющяяся/п.м." />
+    <TextField layoutX="520.0" layoutY="39.0" prefWidth="60.0" />
+    <Label layoutX="322.0" layoutY="350.0" prefHeight="24.0" prefWidth="197.0" text="Гипсокартон/м2" />
+    <Label layoutX="322.0" layoutY="374.0" prefHeight="24.0" prefWidth="197.0" text="Минватая/м2" />
+    <Label layoutX="322.0" layoutY="398.0" prefHeight="24.0" prefWidth="197.0" text="Огракс/п.м." />
+    <TextField layoutX="519.0" layoutY="351.0" prefWidth="60.0" />
+    <TextField layoutX="519.0" layoutY="375.0" prefWidth="60.0" />
+    <TextField layoutX="519.0" layoutY="399.0" prefWidth="60.0" />
+    <Label layoutX="323.0" layoutY="182.0" prefHeight="24.0" prefWidth="197.0" text="Покраска антик/м2" />
+    <Label layoutX="323.0" layoutY="206.0" prefHeight="24.0" prefWidth="197.0" text="Покраска ПФ/м2" />
+    <Label layoutX="323.0" layoutY="230.0" prefHeight="24.0" prefWidth="197.0" text="Покраска шагрень/м2" />
+    <TextField layoutX="520.0" layoutY="183.0" prefWidth="60.0" />
+    <TextField layoutX="520.0" layoutY="207.0" prefWidth="60.0" />
+    <TextField layoutX="520.0" layoutY="231.0" prefWidth="60.0" />
+    <Label layoutX="322.0" layoutY="279.0" prefHeight="24.0" prefWidth="197.0" text="Деревяный наличник/п.м." />
+    <TextField layoutX="519.0" layoutY="280.0" prefWidth="60.0" />
+    <Label layoutX="322.0" layoutY="302.0" prefHeight="24.0" prefWidth="197.0" text="Мет. Наличник п.м." />
+    <TextField layoutX="519.0" layoutY="303.0" prefWidth="60.0" />
+    <Label layoutX="629.0" layoutY="38.0" prefHeight="24.0" prefWidth="197.0" text="Глазок тип 2" />
+    <TextField layoutX="826.0" layoutY="39.0" prefWidth="60.0" />
+    <Label layoutX="629.0" layoutY="62.0" prefHeight="24.0" prefWidth="197.0" text="Глазок тип 3" />
+    <TextField layoutX="826.0" layoutY="63.0" prefWidth="60.0" />
+    <Label layoutX="629.0" layoutY="110.0" prefHeight="24.0" prefWidth="197.0" text="Верхний замок тип 1" />
+    <TextField layoutX="826.0" layoutY="111.0" prefWidth="60.0" />
+    <Label layoutX="629.0" layoutY="134.0" prefHeight="24.0" prefWidth="197.0" text="Верхний замок тип 2" />
+    <TextField layoutX="826.0" layoutY="135.0" prefWidth="60.0" />
+    <Label layoutX="629.0" layoutY="158.0" prefHeight="24.0" prefWidth="197.0" text="Верхний замок тип 3" />
+    <TextField layoutX="826.0" layoutY="159.0" prefWidth="60.0" />
+    <Label layoutX="629.0" layoutY="206.0" prefHeight="24.0" prefWidth="197.0" text="Нижний замок тип 1" />
+    <TextField layoutX="826.0" layoutY="207.0" prefWidth="60.0" />
+    <Label layoutX="629.0" layoutY="230.0" prefHeight="24.0" prefWidth="197.0" text="Нижний замок тип 2" />
+    <TextField layoutX="826.0" layoutY="231.0" prefWidth="60.0" />
+    <Label layoutX="629.0" layoutY="470.0" prefHeight="24.0" prefWidth="130.0" text="Дата обновления" />
+    <TextField layoutX="826.0" layoutY="255.0" prefWidth="60.0" />
+    <TextField layoutX="759.0" layoutY="471.0" prefWidth="127.0" />
+    <Button layoutX="629.0" layoutY="495.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="257.0" text="Зашифровать" />
+  </children>
+</AnchorPane>
