@@ -45,7 +45,24 @@ public class Controller {
 	@FXML private TextField dnal_price;
 	@FXML private TextField lit_nal_price;
 
-	@FXML
+    @FXML private TextField kale257;
+    @FXML private TextField kale189;
+    @FXML private TextField elbor;
+    @FXML private TextField kale252;
+    @FXML private TextField mottura;
+    @FXML private TextField apecs2200;
+    @FXML private TextField kale2000;
+    @FXML private TextField apecsProtector;
+    @FXML private TextField apecsCrome;
+    @FXML private TextField apecsGold;
+    @FXML private TextField apecsCromePlank;
+    @FXML private TextField apecsGoldPlank;
+    @FXML private TextField aydemirBrown;
+    @FXML private TextField aydemirBlack;
+    @FXML private TextField spy200;
+    @FXML private TextField spy10200;
+
+    @FXML
 	protected void encrypt(ActionEvent event) throws IOException {
 		StringBuilder builder = new StringBuilder();
 		readInputValues(builder);
@@ -56,7 +73,7 @@ public class Controller {
 		String encrypedString = encryptor.encrypt(builder.toString());
 		String key = encryptor.getEncryptionKey();
 
-		DateTime current = DateTime.now();
+//		DateTime current = DateTime.now();
 
 		FileChooser fileChooser = new FileChooser();
 
@@ -75,35 +92,53 @@ public class Controller {
 	private void readInputValues(StringBuilder builder) {
 		builder.append(price.getId() + ":" + price.getText() + ";");
 		builder.append(price4040.getId() + ":" + price4040.getText() + ";");
-//		builder.append(price30.getId() + ":" + price30.getText() + ";");
-//		builder.append(price40.getId() + ":" + price40.getText() + ";");
-//		builder.append(price20.getId() + ":" + price20.getText() + ";");
-//		builder.append(price50.getId() + ":" + price50.getText() + ";");
-//		builder.append(price25.getId() + ":" + price25.getText() + ";");
-//		builder.append(price60.getId() + ":" + price60.getText() + ";");
-//		builder.append(lprice15.getId() + ":" + lprice15.getText() + ";");
-//		builder.append(lm_price15.getId() + ":" + lm_price15.getText() + ";");
-//		builder.append(lprice.getId() + ":" + lprice.getText() + ";");
-//		builder.append(lm_price.getId() + ":" + lm_price.getText() + ";");
-//		builder.append(pprice.getId() + ":" + pprice.getText() + ";");
-//		builder.append(listm2.getId() + ":" + listm2.getText() + ";");
-//		builder.append(y_price.getId() + ":" + y_price.getText() + ";");
-//		builder.append(yp_price.getId() + ":" + yp_price.getText() + ";");
-//		builder.append(ogr.getId() + ":" + ogr.getText() + ";");
-//		builder.append(gips.getId() + ":" + gips.getText() + ";");
-//		builder.append(vata.getId() + ":" + vata.getText() + ";");
-//		builder.append(plenka.getId() + ":" + plenka.getText() + ";");
-//		builder.append(ot_price.getId() + ":" + ot_price.getText() + ";");
-//		builder.append(list_mag_price.getId() + ":" + list_mag_price.getText() + ";");
-//		builder.append(list_an_price.getId() + ":" + list_an_price.getText() + ";");
-//		builder.append(list_pf_price.getId() + ":" + list_pf_price.getText() + ";");
-//		builder.append(m10_price.getId() + ":" + m10_price.getText() + ";");
-//		builder.append(m16_price.getId() + ":" + m16_price.getText() + ";");
-//		builder.append(in_price.getId() + ":" + in_price.getText() + ";");
-//		builder.append(pl_price.getId() + ":" + pl_price.getText() + ";");
-//		builder.append(la_price.getId() + ":" + la_price.getText() + ";");
-//		builder.append(dnal_price.getId() + ":" + dnal_price.getText() + ";");
-//		builder.append(lit_nal_price.getId() + ":" + lit_nal_price.getText() + ";");
+		builder.append(price30.getId() + ":" + price30.getText() + ";");
+		builder.append(price40.getId() + ":" + price40.getText() + ";");
+		builder.append(price20.getId() + ":" + price20.getText() + ";");
+		builder.append(price50.getId() + ":" + price50.getText() + ";");
+		builder.append(price25.getId() + ":" + price25.getText() + ";");
+		builder.append(price60.getId() + ":" + price60.getText() + ";");
+		builder.append(lprice15.getId() + ":" + lprice15.getText() + ";");
+		builder.append(lm_price15.getId() + ":" + lm_price15.getText() + ";");
+		builder.append(lprice.getId() + ":" + lprice.getText() + ";");
+		builder.append(lm_price.getId() + ":" + lm_price.getText() + ";");
+		builder.append(pprice.getId() + ":" + pprice.getText() + ";");
+		builder.append(listm2.getId() + ":" + listm2.getText() + ";");
+		builder.append(y_price.getId() + ":" + y_price.getText() + ";");
+		builder.append(yp_price.getId() + ":" + yp_price.getText() + ";");
+		builder.append(ogr.getId() + ":" + ogr.getText() + ";");
+		builder.append(gips.getId() + ":" + gips.getText() + ";");
+		builder.append(vata.getId() + ":" + vata.getText() + ";");
+		builder.append(plenka.getId() + ":" + plenka.getText() + ";");
+		builder.append(ot_price.getId() + ":" + ot_price.getText() + ";");
+		builder.append(list_mag_price.getId() + ":" + list_mag_price.getText() + ";");
+		builder.append(list_an_price.getId() + ":" + list_an_price.getText() + ";");
+		builder.append(list_pf_price.getId() + ":" + list_pf_price.getText() + ";");
+		builder.append(m10_price.getId() + ":" + m10_price.getText() + ";");
+		builder.append(m16_price.getId() + ":" + m16_price.getText() + ";");
+		builder.append(in_price.getId() + ":" + in_price.getText() + ";");
+		builder.append(pl_price.getId() + ":" + pl_price.getText() + ";");
+		builder.append(la_price.getId() + ":" + la_price.getText() + ";");
+		builder.append(dnal_price.getId() + ":" + dnal_price.getText() + ";");
+		builder.append(lit_nal_price.getId() + ":" + lit_nal_price.getText() + ";");
+
+        builder.append(kale257.getId() + ":" + kale257.getText() + ";");
+        builder.append(kale189.getId() + ":" + kale189.getText() + ";");
+        builder.append(elbor.getId() + ":" + elbor.getText() + ";");
+        builder.append(kale252.getId() + ":" + kale252.getText() + ";");
+        builder.append(mottura.getId() + ":" + mottura.getText() + ";");
+        builder.append(apecs2200.getId() + ":" + apecs2200.getText() + ";");
+        builder.append(kale2000.getId() + ":" + kale2000.getText() + ";");
+        builder.append(apecsProtector.getId() + ":" + apecsProtector.getText() + ";");
+        builder.append(apecsCrome.getId() + ":" + apecsCrome.getText() + ";");
+        builder.append(apecsGold.getId() + ":" + apecsGold.getText() + ";");
+        builder.append(apecsCromePlank.getId() + ":" + apecsCromePlank.getText() + ";");
+        builder.append(apecsGoldPlank.getId() + ":" + apecsGoldPlank.getText() + ";");
+        builder.append(aydemirBrown.getId() + ":" + aydemirBrown.getText() + ";");
+        builder.append(aydemirBlack.getId() + ":" + aydemirBlack.getText() + ";");
+        builder.append(spy200.getId() + ":" + spy200.getText() + ";");
+        builder.append(spy10200.getId() + ":" + spy10200.getText() + ";");
+
 	}
 
 }
